@@ -1,0 +1,108 @@
+*{
+    font-family: 'Alkatra', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 20px 20px;
+    width: 100vw;
+    font-size: 1rem;
+    background-color: rgb(237, 55, 55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+#main_title{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+.site_name{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.slogan{
+    width: 15%;
+    margin: 0;
+    text-align: justify;
+    line-height: 150px;
+    height: 150px;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+}
+#main_nav{
+    height: 50px;
+}
+ul{
+    height: 100%;
+    display: flex;
+    margin: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+li > a{
+    text-decoration: none;
+    color: white;
+}
+li:hover{
+    background-color: rgb(255, 148, 148);
+    color: rgb(94, 46, 46);
+    font-weight: 600;
+}
+#event_banner img{
+    width: 100vw;
+    margin: 0;
+}
+#main_contents{
+    display: flex;
+    width: 100vw;
+    height: 50%;
+    background-color: white;
+    color: rgb(94, 46, 46);
+}
+.main_recipe{
+    width: 25vw;
+    border: 3px dotted rgb(214, 214, 214);
+    /* margin-right: 10px; */
+}
+.main_recipe div{
+    width: 100%;
+}
+.main_recipe img{
+    width: 95%;
+    padding: 10px 10px;
+}
+#sub_contents{
+    display: flex;
+    border-bottom: 3px solid white;
+}
+#sub_contents div{
+    width: 50vw;
+    height: 40%;
+}
+.liked_recipe, .best_review{
+    border-right: 3px solid white;
+    display: flex;
+}
+footer{
+    background-color: rgb(98, 96, 96);
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+}
