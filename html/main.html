@@ -6,72 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoEAT!</title>
     <link rel="stylesheet" href="../css/main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=IBM+Plex+Sans+KR&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Gowun+Dodum&family=IBM+Plex+Sans+KR&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!-- 고정 영역 -->
     <header>
-        <div id="main_title">
+        <section id="main_title">
             <div class="logo"><img src="../image/logo.png" alt="로고"></div>
             <div class="search">검색바</div>
-            <div class="site_name">Do EAT!</div>
+            <div class="site_name">Do EAT</div>
             <div class="slogan">나 에 게 선 물 하 는 시 간</div>
             <div class="log_in">로그인 ` 회원가입</div>
-        </div>
+        </section>
         <nav id="main_nav">
             <ul>
-                <li><a href="#">TOP 10</a></li>
-                <li><a href="#">한식 일식 중식 양식</a></li>
-                <li><a href="#">자취 간단 요리</a></li>
-                <li><a href="#">신메뉴</a></li>
-                <li><a href="#">About Do EAT</a></li>
+                <li><a href="../html/devide_menu.html">TOP 10</a></li>
+                <li><a href="../html/devide_menu.html">한식 일식 중식 양식</a></li>
+                <li><a href="../html/devide_menu.html">자취 간단 요리</a></li>
+                <li><a href="../html/devide_menu.html">신메뉴</a></li>
+                <li><a href="../html/company_info.html">About Do EAT</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- 변동 영역 -->
     <section id="event_banner">
-        <img src="../image/banner.jpg" alt="배너사진">
+        <a href="../html/company_info.html">
+            <img src="../image/banner.jpg" alt="배너사진">
+        </a>
     </section>
+    <p class="main_contents_start">이 달의 레시피</p>
     <section id="main_contents">
+        <a href="../html/detail_menu.html">
+            <div class="main_recipe">
+                <img src="../image/main_content1.png" alt="사진">
+                <p><span>하이마미 | 부산식 가래떡 떡볶이</span> - 휴일엔 뭐 먹지?👀 
+                    간단한데 맛있는 집밥요리!</p>
+            </div></a>
         <div class="main_recipe">
-            <div><img src="../image/main_content1.png" alt="사진"></div>
-            <div class="info">설명</div>
+            <img src="../image/main_content7.png" alt="사진">
+            <p><span>부부엌 | 돈까스 덮밥(가츠동)</span> - 식당 사장님이 알려주는
+            간편하고 맛있는 달달 짭짤 가츠동</p>
         </div>
         <div class="main_recipe">
-            <div><img src="../image/main_content1.png" alt="사진"></div>
-            <div class="info">설명</div>
+            <img src="../image/main_content3.png" alt="사진">
+            <p><span>자취요리신 | 계란 두부 조림</span> - 2000원으로 가능. 저렴한 가격으로
+                뜨끈하게 배 채울 요리</p>
         </div>
         <div class="main_recipe">
-            <div><img src="../image/main_content1.png" alt="사진"></div>
-            <div class="info">설명</div>
+            <img src="../image/main_content4.png" alt="사진">
+            <p><span>수리키친 | 마늘 새송이 버섯구이</span> - 새송이 버섯은 이렇게 드세요!
+                간단하면서 새로운 버섯 요리👍💯</p>
         </div>
         <div class="main_recipe">
-            <div><img src="../image/main_content1.png" alt="사진"></div>
-            <div class="info">설명</div>
+            <img src="../image/main_content5.png" alt="사진">
+            <p><span>쿠킹하루 | 스팸 사각 김밥</span> - 촥촥! 접어서 먹는 스팸 
+            사각 김밥! 만들기 쉽지만 맛은 보장!</p>
+        </div>
+        <div class="main_recipe">
+            <img src="../image/main_content6.png" alt="사진">
+            <p><span>썸머썸머 | 들기름 메밀국수</span> - 팬심 싹 빼고 만들어본
+            방탄소년단 정국의 들기름 메밀국수 </p>
+        </div>
+        <div class="main_recipe">
+            <img src="../image/main_content2.png" alt="사진">
+            <p><span>꿀주부 | 고등어 덮밥, 자두 닭볶음</span> - 색다른 집밥 요리!
+            어렵지 않고 맛 좋은 레시피</p>
+        </div>
+        <div class="main_recipe">
+            <img src="../image/main_content8.png" alt="사진">
+            <p><span>해주오 쿠킹 | 투움바 파스타</span> - 전 아웃백 직원이 만드는
+            투움바 파스타! feat.집에 있는 재료</p>
         </div>
     </section>
     <section id="sub_contents">
         <div class="liked_recipe">
             <div class="btn">찜 목록</div>
-            <div class="sub_recipe">
-                <ul>
-                    <li><a href="#">찜글1</a></li>
-                    <li><a href="#">찜글2</a></li>
-                    <li><a href="#">찜글3</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="../html/detail_menu.html">해주오 쿠킹 | 투움바 파스타</a></li>
+                <li><a href="../html/detail_menu.html">썸머썸머 | 들기름 메밀국수</a></li>
+                <li><a href="../html/detail_menu.html">자취요리신 | 계란 두부 조림</a></li>
+            </ul>
         </div>
         <div class="best_review">
             <div class="btn">BEST 리뷰</div>
-            <div class="sub_recipe">
-                <ul>
-                    <li><a href="#">리뷰1</a></li>
-                    <li><a href="#">리뷰2</a></li>
-                    <li><a href="#">리뷰3</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="../html/detail_menu.html">스팸 사각 김밥 | 참치 넣고 해봐도 맛있어요!</a></li>
+                <li><a href="../html/detail_menu.html">부산식 가래떡 떡볶이 | 오 가래떡 잘 어울려용!</a></li>
+                <li><a href="../html/detail_menu.html">계란 두부 조림 | 갓성비..</a></li>
+            </ul>
         </div>
     </section>
+
+    <!-- 고정 영역 -->
     <footer>
         대표 : 설현아 / E-mail : shappy0209@naver.com / Mobile : 010-9481-7488 <br>
         서울 중구 필동로1길 30(필동3가)<br>

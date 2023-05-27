@@ -16,6 +16,11 @@ body{
 section{
     padding: 0 20px;
 }
+a { text-decoration: none; color: black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 /* 최상단바 영역 */
 #main_title{
@@ -33,6 +38,7 @@ section{
     font-weight:800;
     color:rgb(255, 255, 255);
 }
+.site_name a{color: white;}
 .slogan{
     width: 18%;
     margin: 0;
@@ -77,94 +83,59 @@ section{
     font-weight: 600;
 }
 
-/* 배너 이미지 영역 */
-#event_banner img{
-    width: 100vw;
-    height: 50vh;
-}
-#event_banner{
-    padding: 0;
-}
-
-/* 메인 컨텐츠 영역 */
-#main_contents{
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-around;
-    color: rgb(71, 71, 71);
-}
-p.main_contents_start{
-    margin: 50px;
-    font-size: 2em;
-    text-shadow: 1px 1px 3px rgb(153, 153, 153);
-}
-.main_recipe p{
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 0 50px 0;
-    /* text-align: center; */
-}
-.main_recipe span{
-    font-size: 1.2em;
-    color: rgb(215, 0, 0);
-}
-.main_recipe{
-    width: 23vw;
-    height: 45%;
-    /* border-radius: 15px; */
-    /* background-color: rgb(255, 241, 241); */
-    /* margin-right: 10px; */
-}
-.main_recipe img{
-    width: 100%;
-    box-shadow: 1px 1px 15px rgb(39, 39, 39);
-    border-radius: 15px ;
-    border: 2px solid rgb(88, 10, 0);
-}
-#main_contents a:link{
-    text-decoration: none;
-    color: black;
-}
-
-/* 서브 컨텐츠 영역 */
-#sub_contents{
-    display: flex;
-    margin: 50px 0;
-    padding: 0 100px;
+/* 타이틀 영역 */
+#title{
     width: 100vw;
     height: 30vh;
-    background-color: rgb(239, 239, 239);
-}
-.btn{
-    font-size: 1.5em;
-    text-shadow: 1px 1px 3px rgb(153, 153, 153);
-}
-#sub_contents div{
     display: flex;
-    width: 50%;
-    padding: 0 20px;
+    justify-content: center;
     align-items: center;
+    font-size: 2em;
 }
-#sub_contents ul{
-    width: 100%;
-    line-height: 50px;
-    font-size: 1.2em;
+#title img{
+    width: 200px;
 }
-#sub_contents li > a{
+
+/* nav 영역 */
+#companyinfo_nav{
+    height: 5vh;
+    border-top: 3px solid rgb(153, 153, 153);
+    border-bottom: 3px solid rgb(153, 153, 153);
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 71, 71);
+}
+#companyinfo_nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+#companyinfo_nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+}
+#companyinfo_nav li > a{
     text-decoration: none;
-    color: rgb(94, 46, 46);
+    color: rgb(71, 71, 71);
 }
-#sub_contents li:hover{
-    background-color: rgba(255, 148, 148, 0.222);
-    color: rgb(239, 239, 239);
+#companyinfo_nav li:hover{
+    background-color: rgb(244, 244, 244);
     font-weight: 600;
 }
-.liked_recipe, .best_review{
-    /* border-right: 1px solid rgb(98, 96, 96); */
-    display: flex;
+
+/* 컨텐츠 영역 */
+#company_contents{
+    text-align: center;
+}
+#company_contents p{
+    margin: 50px 0;
+}
+#company_contents img{
+    width: 100%;
 }
 
 /* footer 영역 */
