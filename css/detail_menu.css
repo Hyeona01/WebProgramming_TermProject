@@ -96,60 +96,50 @@ a:hover, a:active { text-decoration: none; }
     font-weight: 600;
 }
 
-/* 타이틀 영역 */
+/* title 영역 */
 #title{
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    text-shadow: 1px 1px 3px rgb(153, 153, 153);
-}
-#title img{
-    width: 200px;
+    height: 20vh;
+    padding-top: 8vh;
+    font-size: 2.2em;
 }
 
-/* nav 영역 */
-#companyinfo_nav{
-    height: 5vh;
-    border-top: 3px solid rgb(153, 153, 153);
-    border-bottom: 3px solid rgb(153, 153, 153);
-    background-color: rgb(255, 255, 255);
-    color: rgb(71, 71, 71);
-}
-#companyinfo_nav ul{
-    height: 100%;
+/* 메인컨텐츠 영역 */
+#recipe_intro{
+    height: 60vh;
     display: flex;
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
 }
-#companyinfo_nav li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33%;
-    height: 100%;
+#recipe_intro img{
+    width: 50%;
+    height: 90%;
+    border: 3px solid rgb(255, 145, 35);
+    border-radius: 20px;
 }
-#companyinfo_nav li > a{
-    text-decoration: none;
-    color: rgb(71, 71, 71);
+#recipe_intro div{
+    width: 45%;
+    height: 90%;
+    line-height: 30px;
+    background-color: #efefef;
+    padding: 10px 30px;
 }
-#companyinfo_nav li:hover{
-    background-color: rgb(244, 244, 244);
-    font-weight: 600;
+.ready{
+    text-align: center;
+    font-size: 1.5em;
 }
 
-/* 컨텐츠 영역 */
-#company_contents{
-    text-align: center;
+/* 레시피 영역 */
+#recipe{
+    /* height: 80vh; */
+    padding: 20px 80px;
+    line-height: 40px;
+    font-size: 1.2em;
+    border-top: 3px dotted rgb(98, 96, 96);
+    border-bottom: 3px dotted rgb(98, 96, 96);
 }
-#company_contents p{
-    margin: 50px 0;
-}
-#company_contents img{
-    width: 100%;
+
+#detail_review{
+    height: 30vh;
+    padding: 20px 80px;
 }
 
 /* footer 영역 */
