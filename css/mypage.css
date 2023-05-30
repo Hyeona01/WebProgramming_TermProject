@@ -43,6 +43,10 @@ a:hover, a:active { text-decoration: none; }
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: -5px;
+}
+.ma{
+    margin: 0 30px;
 }
 .slogan{
     width: 18%;
@@ -87,6 +91,9 @@ a:hover, a:active { text-decoration: none; }
     height: 100%;
 }
 #main_nav li > a{
+    display: block;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: rgb(71, 71, 71);
 }
@@ -98,10 +105,12 @@ a:hover, a:active { text-decoration: none; }
 
 /* title 영역 */
 #title{
-    height: 20vh;
-    /* padding-top: 5vh; */
-    font-size: 2.5em;
-    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
     text-shadow: 1px 1px 3px rgb(153, 153, 153);
 }
 
@@ -120,7 +129,7 @@ a:hover, a:active { text-decoration: none; }
     color: #545454;
     font-weight: bold;
     text-align: center;
-    text-shadow: 1px 1px 3px rgb(153, 153, 153);
+    text-shadow: 1px 1px 3px #999999;
 }
 .recipe a{
     width: 100%;

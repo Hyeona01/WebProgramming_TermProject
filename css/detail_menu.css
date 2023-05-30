@@ -43,6 +43,10 @@ a:hover, a:active { text-decoration: none; }
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: -5px;
+}
+.ma{
+    margin: 0 30px;
 }
 .slogan{
     width: 18%;
@@ -58,7 +62,7 @@ a:hover, a:active { text-decoration: none; }
         width: 100%;
     }
 }
-.log_in a{
+.log_in a, .my_page a{
     color: #545454;
 }
 .my_page{
@@ -99,8 +103,14 @@ a:hover, a:active { text-decoration: none; }
 /* title 영역 */
 #title{
     height: 20vh;
-    padding-top: 8vh;
+    padding-top: 10vh;
+    padding-left: 50px;
+}
+.title_name{
     font-size: 2.2em;
+}
+.star{
+    color: black;
 }
 
 /* 메인컨텐츠 영역 */
@@ -125,6 +135,9 @@ a:hover, a:active { text-decoration: none; }
 .ready{
     text-align: center;
     font-size: 1.5em;
+    margin: 10px 0;
+    color: #961276;
+    text-shadow: 1px 1px 2px rgb(153, 153, 153);
 }
 
 /* 레시피 영역 */
@@ -140,6 +153,10 @@ a:hover, a:active { text-decoration: none; }
 #detail_review{
     height: 30vh;
     padding: 20px 80px;
+}
+#detail_review h1, #recipe h1{
+    color: #961276;
+    text-shadow: 1px 1px 2px rgb(153, 153, 153);
 }
 
 /* footer 영역 */

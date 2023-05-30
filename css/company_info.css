@@ -43,6 +43,10 @@ a:hover, a:active { text-decoration: none; }
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: -5px;
+}
+.ma{
+    margin: 0 30px;
 }
 .slogan{
     width: 18%;
@@ -58,7 +62,7 @@ a:hover, a:active { text-decoration: none; }
         width: 100%;
     }
 }
-.log_in a{
+.log_in a, .my_page a{
     color: #545454;
 }
 .my_page{
@@ -87,12 +91,15 @@ a:hover, a:active { text-decoration: none; }
     height: 100%;
 }
 #main_nav li > a{
+    display: block;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
-    color: rgb(71, 71, 71);
+    color: #474747;
 }
 #main_nav li:hover{
-    background-color: rgb(255, 148, 148);
-    color: rgb(94, 46, 46);
+    background-color: #ff9494;
+    color: #5e2e2e;
     font-weight: 600;
 }
 
@@ -103,25 +110,24 @@ a:hover, a:active { text-decoration: none; }
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    text-shadow: 1px 1px 3px rgb(153, 153, 153);
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #999999;
 }
 #title img{
     width: 200px;
 }
 
-/* nav 영역 */
+/* company nav 영역 */
 #companyinfo_nav{
     height: 5vh;
-    border-top: 3px solid rgb(153, 153, 153);
-    border-bottom: 3px solid rgb(153, 153, 153);
-    background-color: rgb(255, 255, 255);
-    color: rgb(71, 71, 71);
+    border-top: 3px solid #999999;
+    border-bottom: 3px solid #999999;
+    background-color: #ffffff;
+    color: #474747;
 }
 #companyinfo_nav ul{
     height: 100%;
     display: flex;
-    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
@@ -134,11 +140,14 @@ a:hover, a:active { text-decoration: none; }
 }
 #companyinfo_nav li > a{
     text-decoration: none;
-    color: rgb(71, 71, 71);
+    color: #474747;
 }
 #companyinfo_nav li:hover{
-    background-color: rgb(244, 244, 244);
-    font-weight: 600;
+    background-color: #d2d2d2;
+    /* color: white; */
+}
+.this_page{
+    background-color: #f4f4f4;
 }
 
 /* 컨텐츠 영역 */
